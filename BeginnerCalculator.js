@@ -8,17 +8,19 @@ function computeResult() {
 		alert("NaN");
 		return;
 	}
-	if (multiplier="*"){
-		var endResult= value1*value2
+	//account for rounding problem
+	if (multiplier=="*"){
+		var endResult= value1*value2;
 	}
-	if (multiplier="/"){
-		var endResult= value1/value2)
+	else if (multiplier=="/"){
+		var endResult= value1/value2;
 	}
-	if (multiplier="+"){
-		var endResult= value1+value2)
+	else if (multiplier=="+"){
+		var endResult= value1+value2;
+		//strings cocatenating
 	}
-	if (multiplier="-"){
-		var endResult= value1-value2)
+	else if (multiplier=="-"){
+		var endResult= value1-value2;
 	}	
 	document.getElementById("endResult").innerHTML = endResult;
 }
