@@ -1,7 +1,7 @@
 function computeResult() {
-	var value1 = document.getElementById("val1").value;
+	var value1 = parseFloat(parseFloat(document.getElementById("val1").value);
 	var multiplier = document.getElementById("function").value;
-	var value2 = document.getElementById("val2").value;
+	var value2 = parseFloat(document.getElementById("val2").value);
 	var endResult=0;
 	
 	if (value1 == "" || value2 == ""){
